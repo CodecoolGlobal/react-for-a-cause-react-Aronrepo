@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
+.header {
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  display: flex;
+  
+}
+.imagename {
+  display: flex;
+}
+.aboutcontact {
+  display: flex;
+}
+#image {
+  width: 64px;
+  height: 64px;
+}
+
+#name {
+  display: flex;
+  align-items: center;
+}
+
+#namepsan {
+  left: 81px;
+  right: 81px;
+}
