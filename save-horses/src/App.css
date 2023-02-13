@@ -1,3 +1,50 @@
+/* CSS HEX / */
+:root {
+--hunter-green: #34654cff;
+--mint: #63a683ff;
+--almond: #e7d7c1ff;
+--beaver: #a78a7fff;
+--liver: #735751ff;
+}
+/* / CSS HSL / */
+/* --hunter-green: hsla(149, 32%, 30%, 1);
+--mint: hsla(149, 27%, 52%, 1);
+--almond: hsla(35, 44%, 83%, 1);
+--beaver: hsla(16, 19%, 58%, 1);
+--liver: hsla(11, 17%, 38%, 1); */
+
+/* / SCSS HEX / */
+/* $hunter-green: #34654cff;
+$mint: #63a683ff;
+$almond: #e7d7c1ff;
+$beaver: #a78a7fff;
+$liver: #735751ff; */
+
+/* / SCSS HSL / */
+/* $hunter-green: hsla(149, 32%, 30%, 1);
+$mint: hsla(149, 27%, 52%, 1);
+$almond: hsla(35, 44%, 83%, 1);
+$beaver: hsla(16, 19%, 58%, 1);
+$liver: hsla(11, 17%, 38%, 1); */
+
+/* / SCSS RGB / */
+/* $hunter-green: rgba(52, 101, 76, 1);
+$mint: rgba(99, 166, 131, 1);
+$almond: rgba(231, 215, 193, 1);
+$beaver: rgba(167, 138, 127, 1);
+$liver: rgba(115, 87, 81, 1); */
+
+/* / SCSS Gradient  */
+/* $gradient-top: linear-gradient(0deg, #34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff);
+$gradient-right: linear-gradient(90deg, #34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff);
+$gradient-bottom: linear-gradient(180deg, #34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff);
+$gradient-left: linear-gradient(270deg, #34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff);
+$gradient-top-right: linear-gradient(45deg, #34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff);
+$gradient-bottom-right: linear-gradient(135deg, #34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff);
+$gradient-top-left: linear-gradient(225deg, #34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff);
+$gradient-bottom-left: linear-gradient(315deg, #34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff);
+$gradient-radial: radial-gradient(#34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff); */
+
 .App {
   text-align: center;
 }
@@ -42,6 +89,9 @@
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   display: flex;
+  top: 1px;
+  justify-content: space-between;
+  position: sticky;
   
 }
 .imagename {
@@ -49,18 +99,41 @@
 }
 .aboutcontact {
   display: flex;
+  align-items: center;
+  justify-content: right;
 }
 #image {
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
 }
 
 #name {
   display: flex;
   align-items: center;
+  position: relative;
+  left: 20px;
 }
 
-#namepsan {
-  left: 81px;
-  right: 81px;
+#about {
+  position: relative;
+  right: 10px;
+  background-color: var(--mint);
+  width: 100px;
+  height: 80px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  position: relative;
+  right: 10px;
+  background-color: var(--hunter-green);
+  width: 100px;
+  height: 80px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

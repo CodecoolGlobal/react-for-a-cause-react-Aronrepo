@@ -4,7 +4,7 @@ export default function TodoList() {
     <div className="header">
       <div className="imagename">
         <div id="image">
-          <img src={horsehead} alt="horsehead" width="64" height="64" />
+          <img src={horsehead} alt="horsehead" width="80" height="80" />
         </div>
         <div id="name"><span id="namespan">Saving America's Horses</span></div>
       </div>
