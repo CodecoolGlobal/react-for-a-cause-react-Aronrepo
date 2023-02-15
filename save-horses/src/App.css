@@ -299,7 +299,6 @@ html {
   flex-direction: row;
   justify-content: space-between;
   padding: 15px;
-  margin: 10px;
   background-color: var(--almond);
 }
 
@@ -311,13 +310,29 @@ p {
   text-justify: inter-word;
 }
 
-#aboutUsImg {
-}
-.socialsLogo {
+.socialsLogo{
   width: 50px;
   margin: 5px;
 }
 .socialsLogo:hover {
   border-radius: 50%;
   background-color: var(--mint);
+}
+
+/*Footer*/
+
+.footer{
+  bottom: 10px;
+  text-align: center;
+  background-color: var(--almond);
+  padding: 3px;
+  }
+
+.badge{
+  width: 110px;
+  margin: 5px;
+}
+
+.footer p{
+  text-align: center;
 }

@@ -10,12 +10,12 @@ export default function AboutUs(){
           <p>Our services and objectives are made possible through donations to our lifesaving mission. Unrestricted general funding allows us to allocate our resources most efficiently and where the needs are greatest. Federal ID No 26-3052458</p>
         </div>
         <div id="aboutUsImg">
-        <a href="https://www.facebook.com/savingamericashorses/"><img alt="facebook" class="socialsLogo" src={fbLogo}></img></a> 
+        <a href="https://www.facebook.com/savingamericashorses/"><img alt="facebook" className="socialsLogo" src={fbLogo}></img></a> 
           <br/>
-          <a href="https://twitter.com/savingamehorses"><img alt="twitter" class="socialsLogo" src={twLogo}></img></a> 
+          <a href="https://twitter.com/savingamehorses"><img alt="twitter" className="socialsLogo" src={twLogo}></img></a> 
           
           <br/>
-          <a href="https://www.instagram.com/wildforlifefoundationsah/"><img alt="instagram"class="socialsLogo" src={igLogo}></img></a> 
+          <a href="https://www.instagram.com/wildforlifefoundationsah/"><img alt="instagram"className="socialsLogo" src={igLogo}></img></a> 
           </div>
         </div>
       );
