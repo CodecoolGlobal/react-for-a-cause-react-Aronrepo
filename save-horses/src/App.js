@@ -5,6 +5,8 @@ import HelpUs from './HelpUs.js';
 import AboutUs from './AboutUs.js';
 import Carousel from './Gallery';
 import {horses} from './Data';
+import Footer from './Footer.js'
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <AboutUs />
       <HelpUs />
       <Carousel images={horses}/>
+      <Footer />
     </div>
   );
 }
