@@ -86,49 +86,89 @@ html {
   left: 20px;
 }
 
-#about {
-  position: relative;
-  /* right: 10px; */
+.aboutContact {
+  cursor: pointer;
+}
+
+.aboutContact > .aboutUsBtn {
   background-color: var(--almond);
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
   width: 109px;
   height: 80px;
   line-height: 1.5;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  
+}
+.aboutContact > .aboutUsBtn:link, .aboutUsBtn:visited {
   font-weight: 600;
   font-family: 'Playfair Display', serif;
   font-size: 27px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  
 }
 
-#contact {
-  position: relative;
-  /* right: 10px; */
+.aboutContact > .aboutUsBtn:hover {
+  background-color: rgba(231, 215, 193, 0.79);
+}
+
+
+.aboutContact > .contactUsBtn {
   background-color: var(--mint);
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
   width: 109px;
   height: 80px;
   line-height: 1.5;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  
+}
+.aboutContact > .contactUsBtn:link, .contactUsBtn:visited {
   font-weight: 600;
   font-family: 'Playfair Display', serif;
   font-size: 27px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  
 }
 
-#helpus {
-  position: relative;
-  /* right: 10px; */
+.aboutContact > .contactUsBtn:hover {
+  background-color: rgba(99, 166, 131, 0.79);
+}
+.aboutContact > .helpUsBtn {
   background-color: var(--hunter-green);
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
   width: 109px;
   height: 80px;
   line-height: 1.5;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  
+}
+.aboutContact > .helpUsBtn:link, .helpUsBtn:visited {
   font-weight: 600;
   font-family: 'Playfair Display', serif;
   font-size: 27px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+.aboutContact > .helpUsBtn:hover {
+  background-color: rgba(52, 101, 76, 0.79);
 }
 
 .welcome {
@@ -181,8 +221,6 @@ html {
   height: 400px;
   background-repeat:no-repeat;
   background-size: cover;
-  /* background-size:contain; */
-  /* background-position:center; */
 }
 
 .helpUsText {
@@ -306,11 +344,11 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 2%;
   padding-right: 2%;
   background-color: var(--almond);
+  padding-top: 100px;
 }
 
 #aboutUsText {

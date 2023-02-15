@@ -1,6 +1,6 @@
 const HelpUs = () => {
   return (
-    <div className="helpUs">
+    <div className="helpUs" id="helpUs">
       <img src="./img/peakpx_m.jpg" alt="" />
       <div className="helpUsText">How can You help us?</div>
       <div className="buttons">

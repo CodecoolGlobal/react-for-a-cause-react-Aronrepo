@@ -3,7 +3,7 @@ import twLogo from "./img/twitter.png"
 import igLogo from "./img/instagram.png"
 export default function AboutUs(){
     return (
-        <div className="aboutUs">
+        <div className="aboutUs" id = "aboutUs">
             <div id="aboutUsText">
           <h2>About Us</h2>
           <p><b>SAVING AMERICA'S HORSES</b> is a humane educational multi-media project and lifesaving initiative under The Wild for Life Foundation, (WFLF) a nonprofit 501 c3 charity dedicated to saving, protecting and preserving equines through education, sanctuary, rescue and preservation. <b>We work to ensure the protection of wild equines and the humane treatment</b>, care and well-being of all equines. Through Saving America's Horses WFLF strives to <b>inform, inspire, and empower</b> the public for the greater good in <b>saving, preserving and protecting</b> wild and domestic equines and their significant roles in our world’s society, ecosystem and history; for a better world now and for generations to come.</p>
