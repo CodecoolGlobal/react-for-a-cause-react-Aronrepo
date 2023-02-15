@@ -9,9 +9,13 @@ export default function TodoList() {
         <div id="name"><span id="namespan">Saving America's Horses</span></div>
       </div>
       <div className="aboutContact">
-        <div id="about">About</div>
-        <div id="contact">Contact</div>
-        <div id="helpus">Help us</div>
+        
+          <a className= "aboutUsBtn" href="#aboutUs">About</a>
+          <a className= "contactUsBtn" href="#helpUs">Contact</a>
+          <a className= "helpUsBtn" href="#helpUs">Help Us</a>
+          
+        {/* <div id="contact" className="headerButton">Contact</div> */}
+        {/* <div id="helpus" className="headerButton">Help us</div> */}
       </div>
     </div>
   );
