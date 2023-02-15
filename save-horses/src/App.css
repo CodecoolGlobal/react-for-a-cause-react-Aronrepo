@@ -168,6 +168,10 @@ html {
   #image {
     transform: translateX(-10px);
   }
+
+  .buttons {
+    flex-direction: column;
+  }
 }
 
 .helpUs {
