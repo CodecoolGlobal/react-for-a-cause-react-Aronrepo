@@ -192,10 +192,11 @@ html {
 .helpUsButton {
   background-color: var(--mint);
   font-family: Playfair Display;
-  font-size: large;
+  font-size: x-large;
   padding: 5px 10px;
-  border-radius: 20px;
-  margin-left: 30px;
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-top: 7px;
 }
 
 @media screen and (max-width: 800px) {
@@ -226,7 +227,7 @@ html {
   font-weight: 600;
   font-family: "Playfair Display", serif;
   font-size: 30px;
-  color: white;
+  color: var(--almond);
   margin-left: 30px;
   margin-top: 15px;
 }
@@ -388,6 +389,7 @@ box-sizing: border-box;
   height: 400px;
   width: 100%;
   max-width: 800px;
+  margin: auto;
 }
 
 .carouselWrapper{
@@ -438,11 +440,13 @@ box-sizing: border-box;
   font-size: 30px;
 }
 .carouselArrowLeft, .carouselArrowRight{
+  font-family:'Times New Roman', Times, serif;
+  color: var(--almond);
   position: absolute;
   font-size: 40px;
   top: 50%;
   transform: translate(0, -50%);
-  background-color: var(--mint);
+  background-color: var(--hunter-green);
   display: flex;
   justify-content: center;
   align-items: center;
