@@ -13,9 +13,9 @@ function App() {
     <div>
       <Header />
       <Welcome/>
+      <Carousel images={horses}/>
       <AboutUs />
       <HelpUs />
-      <Carousel images={horses}/>
       <Footer />
     </div>
   );
