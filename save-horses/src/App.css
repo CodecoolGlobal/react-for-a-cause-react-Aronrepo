@@ -62,6 +62,7 @@ html {
   top: 0;
   justify-content: space-between;
   position: sticky;
+  z-index: 1;
 }
 .imagename {
   display: flex;
@@ -156,11 +157,12 @@ html {
   margin-left: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   #image {
     transform: translateX(-10px);
@@ -172,7 +174,7 @@ html {
     url("./img/peakpx_m.jpg");
   height: 400px;
   background-repeat:no-repeat;
-  background-size: 100%;
+  background-size: cover;
   /* background-size:contain; */
   /* background-position:center; */
 }
