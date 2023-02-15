@@ -48,7 +48,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
 #root {
   font-family: "Playfair Display", normal;
@@ -57,7 +56,7 @@ html {
 .header {
   background-color: white;
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 40px;
   display: flex;
   top: 0;
@@ -66,7 +65,7 @@ html {
 }
 .imagename {
   display: flex;
-  margin-right: 30px
+  margin-right: 30px;
 }
 .aboutContact {
   display: flex;
@@ -146,8 +145,9 @@ html {
   padding: 5px 10px;
   border-radius: 20px;
   margin-left: 30px;
+}
 
-@media screen and (max-width : 480px){
+@media screen and (max-width: 480px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -159,15 +159,14 @@ html {
 }
 
 .helpUs {
-  background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url("./img/peakpx_m.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./img/peakpx_m.jpg");
   height: 400px;
 }
 
 .helpUsText {
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 30px;
   color: white;
   margin-left: 30px;
@@ -182,7 +181,7 @@ html {
 .donate {
   position: relative;
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 30px;
   color: var(--almond);
   margin-left: 30px;
@@ -195,22 +194,20 @@ html {
   align-items: center;
 }
 
-.donateSpan
-{
-    opacity: .3;
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    z-index:1;
+.donateSpan {
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
-
 
 .bestMovie {
   position: relative;
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 30px;
   color: var(--almond);
   margin-left: 30px;
@@ -221,21 +218,19 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.whatchSpan
-{
-    opacity: .3;
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    z-index:1;
+.whatchSpan {
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
-.aboutUs{
+.aboutUs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -244,23 +239,21 @@ html {
   background-color: var(--almond);
 }
 
-#aboutUsText{
+#aboutUsText {
   width: 90%;
 }
-p{
+p {
   text-align: justify;
   text-justify: inter-word;
 }
 
-#aboutUsImg{
+#aboutUsImg {
 }
-.socialsLogo{
+.socialsLogo {
   width: 50px;
   margin: 5px;
 }
-.socialsLogo:hover{
+.socialsLogo:hover {
   border-radius: 50%;
   background-color: var(--mint);
 }
-
-
