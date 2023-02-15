@@ -35,7 +35,6 @@ function Carousel({ images }) {
             className={index === current ? "carouselCard carouselCard_active" : "carouselCard"}>
               <img className="cardImage" src={img.image} alt="" />
               <div className="cardOverlay">
-                <h2 className="cardTitle">{img.title}</h2>
               </div>
             </div>
           )
