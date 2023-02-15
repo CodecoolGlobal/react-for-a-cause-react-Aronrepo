@@ -1,10 +1,10 @@
 /* CSS HEX / */
 :root {
---hunter-green: #34654cff;
---mint: #63a683ff;
---almond: #e7d7c1ff;
---beaver: #a78a7fff;
---liver: #735751ff;
+  --hunter-green: #34654cff;
+  --mint: #63a683ff;
+  --almond: #e7d7c1ff;
+  --beaver: #a78a7fff;
+  --liver: #735751ff;
 }
 /* / CSS HSL / */
 /* --hunter-green: hsla(149, 32%, 30%, 1);
@@ -44,12 +44,19 @@ $gradient-bottom-right: linear-gradient(135deg, #34654cff, #63a683ff, #e7d7c1ff,
 $gradient-top-left: linear-gradient(225deg, #34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff);
 $gradient-bottom-left: linear-gradient(315deg, #34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff);
 $gradient-radial: radial-gradient(#34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #735751ff); */
-
+html {
+  scroll-behavior: smooth;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
+#root {
+  font-family: "Playfair Display", normal;
+}
+
 .header {
+  background-color: white;
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 40px;
   display: flex;
   top: 0;
@@ -58,8 +65,9 @@ $gradient-radial: radial-gradient(#34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #7
 }
 .imagename {
   display: flex;
+  margin-right: 30px;
 }
-.aboutcontact {
+.aboutContact {
   display: flex;
   align-items: center;
   justify-content: right;
@@ -78,9 +86,9 @@ $gradient-radial: radial-gradient(#34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #7
 
 #about {
   position: relative;
-  right: 10px;
-  background-color: var(--mint);
-  width: 100px;
+  /* right: 10px; */
+  background-color: var(--almond);
+  width: 109px;
   height: 80px;
   line-height: 1.5;
   display: flex;
@@ -90,9 +98,9 @@ $gradient-radial: radial-gradient(#34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #7
 
 #contact {
   position: relative;
-  right: 10px;
-  background-color: var(--hunter-green);
-  width: 100px;
+  /* right: 10px; */
+  background-color: var(--mint);
+  width: 109px;
   height: 80px;
   line-height: 1.5;
   display: flex;
@@ -100,9 +108,129 @@ $gradient-radial: radial-gradient(#34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #7
   align-items: center;
 }
 
-/*AboutUs*/
+#helpus {
+  position: relative;
+  /* right: 10px; */
+  background-color: var(--hunter-green);
+  width: 109px;
+  height: 80px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.aboutUs{
+.welcome {
+  background-image: url("./img/welcome_01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcomeText {
+  font-size: large;
+  width: 35vw;
+  color: var(--almond);
+  margin-left: 15px;
+  line-height: 1.5;
+}
+
+.helpUsButton {
+  background-color: var(--mint);
+  font-family: Playfair Display;
+  font-size: large;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #image {
+    transform: translateX(-10px);
+  }
+}
+
+.helpUs {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./img/peakpx_m.jpg");
+  height: 400px;
+}
+
+.helpUsText {
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: white;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+}
+.donate {
+  position: relative;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: var(--almond);
+  margin-left: 30px;
+  margin-top: 15px;
+  background-color: var(--hunter-green);
+  width: 250px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donateSpan {
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.bestMovie {
+  position: relative;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: var(--almond);
+  margin-left: 30px;
+  margin-top: 15px;
+  width: 250px;
+  height: 100px;
+  border: 4px var(--hunter-green) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatchSpan {
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.aboutUs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -111,10 +239,10 @@ $gradient-radial: radial-gradient(#34654cff, #63a683ff, #e7d7c1ff, #a78a7fff, #7
   background-color: var(--almond);
 }
 
-#aboutUsText{
+#aboutUsText {
   width: 90%;
 }
-p{
+p {
   text-align: justify;
   text-justify: inter-word;
 }
@@ -123,7 +251,7 @@ p{
   width: 50px;
   margin: 5px;
 }
-.socialsLogo:hover{
+.socialsLogo:hover {
   border-radius: 50%;
   background-color: var(--mint);
 }
