@@ -1,10 +1,10 @@
 /* CSS HEX / */
 :root {
---hunter-green: #34654cff;
---mint: #63a683ff;
---almond: #e7d7c1ff;
---beaver: #a78a7fff;
---liver: #735751ff;
+  --hunter-green: #34654cff;
+  --mint: #63a683ff;
+  --almond: #e7d7c1ff;
+  --beaver: #a78a7fff;
+  --liver: #735751ff;
 }
 /* / CSS HSL / */
 /* --hunter-green: hsla(149, 32%, 30%, 1);
@@ -50,6 +50,10 @@ html {
 
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
+#root {
+  font-family: "Playfair Display", normal;
+}
+
 .header {
   background-color: white;
   font-weight: 600;
@@ -116,6 +120,32 @@ html {
   justify-content: center;
   align-items: center;
 }
+
+.welcome {
+  background-image: url("./img/welcome_01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcomeText {
+  font-size: large;
+  width: 35vw;
+  color: var(--almond);
+  margin-left: 15px;
+  line-height: 1.5;
+}
+
+.helpUsButton {
+  background-color: var(--mint);
+  font-family: Playfair Display;
+  font-size: large;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 30px;
 
 @media screen and (max-width : 480px){
   .header {
