@@ -1,4 +1,3 @@
-import welcome_01 from "./img/welcome_01.jpg";
 
 const Welcome = () => {
   return (
