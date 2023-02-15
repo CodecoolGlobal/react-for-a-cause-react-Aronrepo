@@ -235,7 +235,6 @@ html {
   flex-direction: row;
   justify-content: space-between;
   padding: 15px;
-  margin: 10px;
   background-color: var(--almond);
 }
 
@@ -261,6 +260,8 @@ p {
 .footer{
   bottom: 10px;
   text-align: center;
+  background-color: var(--almond);
+  padding: 3px;
   }
 
 .badge{

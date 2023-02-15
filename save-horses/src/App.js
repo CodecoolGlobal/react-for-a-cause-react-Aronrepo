@@ -11,8 +11,8 @@ function App() {
       <Header />
       <Welcome/>
       <AboutUs />
-      <Footer />
       <HelpUs />
+      <Footer />
     </div>
   );
 }

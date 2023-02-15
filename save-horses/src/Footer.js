@@ -5,11 +5,11 @@ import badge4 from "./img/great nonprofits_tr-ribbon-sm.png"
 export default function Footer() {
   return (
     <div className="footer">
-        <img class="badge" alt="badge" src={badge4}></img>
+        <img className="badge" alt="badge" src={badge4}></img>
         <br></br>
-        <img class="badge" alt="badge" src={badge1}></img>
-        <img class="badge" alt="badge" src={badge2}></img>
-        <img class="badge" alt="badge" src={badge3}></img>
+        <img className="badge" alt="badge" src={badge1}></img>
+        <img className="badge" alt="badge" src={badge2}></img>
+        <img className="badge" alt="badge" src={badge3}></img>
         <br></br>
         <p>© 2008-2023 WFLF Humanion Films All Rights Reserved</p>
     </div>
