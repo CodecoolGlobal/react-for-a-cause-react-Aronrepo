@@ -10,7 +10,6 @@ export default function Contact() {
  
 
   const [displayForm, setDisplayForm] = useState(true);
-  //const [value, setvalue] = useState("");
 
   
   function ContactText(){
@@ -30,7 +29,6 @@ export default function Contact() {
       
 
     }
-    //|| !lastName || !email || !subject || !message
     function handleSubmit(e) {
       e.preventDefault();
       if (!firstName || !lastName || !email || !subject || !message) {
@@ -39,7 +37,6 @@ export default function Contact() {
       setDisplayForm(false);
       formArr.push(tempObj);
       console.log(formArr);
-      //addTodo(value);
 
       setFirstName("");
       setLastName("");
