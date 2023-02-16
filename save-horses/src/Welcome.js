@@ -6,7 +6,7 @@ const Welcome = () => {
         <h2> We are dedicated to saving and protecting equines through education, rescue and preservation.</h2>
       </div>
       <div className="helpUsButtonDiv">
-        <button className="helpUsButton">HELP US</button>
+        <a className="helpUsButton" href="#helpUs">HELP US</a>
       </div>
     </div>
   );

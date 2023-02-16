@@ -68,6 +68,7 @@ html {
 .imagename {
   display: flex;
   margin-right: 30px;
+  
 }
 .aboutContact {
   display: flex;
@@ -77,6 +78,7 @@ html {
 #image {
   width: 80px;
   height: 80px;
+  cursor: pointer;
 }
 
 #name {
@@ -197,7 +199,24 @@ html {
   border-radius: 15px;
   margin-left: 15px;
   margin-top: 7px;
+  transition: 0.2s;
 }
+
+
+.helpUsButton:link, .helpUsButton:visited {
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: x-large;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+.helpUsButton:hover {
+  background-color: rgba(99, 166, 131, 0.79);
+}
+
 
 @media screen and (max-width: 800px) {
   .header {
@@ -577,3 +596,40 @@ input{
   text-align: center;
 }
 
+.top-to-btm{
+  position: relative;
+}
+.icon-position{
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+.icon-style{
+  background-color: var(--mint);
+  border: 2px solid --almond;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: var(--almond);
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all .5s ease-in-out;
+}
+.icon-style:hover{
+  animation: none;
+  background: var(--hunter-green);
+  color: var(--almond);
+  border: 2px solid var(--almond);
+}
+@keyframes movebtn {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
