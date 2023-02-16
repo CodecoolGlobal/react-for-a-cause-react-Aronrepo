@@ -490,6 +490,77 @@ box-sizing: border-box;
   background-color: var(--mint);
 }
 
+
+.contactDiv{
+  padding: 60px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+input{
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0);
+border-width: 0 0 1.5px;
+border-color: black;
+font-family: "Playfair Display", normal;
+}
+input:focus{
+  border-color: none;
+  outline: none;
+}
+
+textarea{
+  vertical-align:top;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 1.5 0 1.5px;
+  border-color: black;
+  font-family: "Playfair Display", normal;
+}
+textarea:focus{
+  border-color: none;
+  outline: none;
+}
+
+label {
+  width: 180px;
+  display: inline-block;
+}
+
+#horseImg{
+  width: 500px;
+  border-radius: 2%;
+}
+
+
+
+#email{
+  width: 300px;
+}
+
+#sendButton{
+margin-left: 435px;
+margin-top: 5px;
+padding: 5px;
+font-size: medium;
+background-color: var(--mint);
+border-radius: 10%;
+border: none;
+font-family: "Playfair Display", normal;
+font-weight: 550;
+}
+
+#sendButton:hover{
+  background-color: rgb(81, 141, 110);
+  cursor: pointer;
+}
+
+input{
+  width: fit-content;
+}
+
 .footer{
   bottom: 10px;
   text-align: center;

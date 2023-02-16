@@ -6,7 +6,7 @@ import AboutUs from './AboutUs.js';
 import Carousel from './Gallery';
 import {horses} from './Data';
 import Footer from './Footer.js'
-
+import Contact from './Contact.js'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Carousel images={horses}/>
       <AboutUs />
       <HelpUs />
+      <Contact />
       <Footer />
     </div>
   );
