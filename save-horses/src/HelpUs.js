@@ -14,7 +14,7 @@ const HelpUs = () => {
         
         
           <div className="bestMovie">
-            Whatch the film
+            Watch the film
             <a href="https://www.savingamericashorses.org/watch.html">
               <span className="whatchSpan"></span>
             </a>
