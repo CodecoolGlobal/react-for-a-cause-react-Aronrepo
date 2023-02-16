@@ -5,6 +5,7 @@ import HelpUs from './HelpUs.js';
 import AboutUs from './AboutUs.js';
 import Carousel from './Gallery';
 import {horses} from './Data';
+import Contact from './Contact.js'
 import Footer from './Footer.js';
 import ScrollToTop from './ScrollToTop';
 
@@ -18,6 +19,7 @@ function App() {
       <Carousel images={horses}/>
       <AboutUs />
       <HelpUs />
+      <Contact />
       <Footer />
     </div>
   );
