@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 function Carousel({ images }) {
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
-  let timeOut = null;
+  let timeOut = useRef(null);
 
   useEffect(() => {
-    timeOut = autoPlay && setTimeout(() => {
+    timeOut.current = autoPlay && setTimeout(() => {
       slideRight();
     }, 3000)
   });
@@ -23,7 +23,7 @@ function Carousel({ images }) {
     <div className="carousel" 
     onMouseEnter={() => {
       setAutoPlay(false);
-      clearTimeout(timeOut);
+      clearTimeout(timeOut.current);
     }} 
     onMouseLeave={() => {
       setAutoPlay(true);
@@ -34,8 +34,6 @@ function Carousel({ images }) {
             <div key={index} 
             className={index === current ? "carouselCard carouselCard_active" : "carouselCard"}>
               <img className="cardImage" src={img.image} alt="" />
-              <div className="cardOverlay">
-              </div>
             </div>
           )
         })}
