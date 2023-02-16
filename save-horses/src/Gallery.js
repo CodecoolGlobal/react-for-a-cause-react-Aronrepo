@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 function Carousel({ images }) {
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
-  let timeOut = null;
+  let timeOut = useRef(null);
 
   useEffect(() => {
-    timeOut = autoPlay && setTimeout(() => {
+    timeOut.current = autoPlay && setTimeout(() => {
       slideRight();
     }, 3000)
   });
@@ -20,27 +21,25 @@ function Carousel({ images }) {
   };
 
   return (
-    <div className="carousel" 
-    onMouseEnter={() => {
-      setAutoPlay(false);
-      clearTimeout(timeOut);
-    }} 
-    onMouseLeave={() => {
-      setAutoPlay(true);
+    <div className="carousel"
+      onMouseEnter={() => {
+        setAutoPlay(false);
+        clearTimeout(timeOut.current);
+      }}
+      onMouseLeave={() => {
+        setAutoPlay(true);
       }}>
       <div className="carouselWrapper">
         {images.map((img, index) => {
           return (
-            <div key={index} 
-            className={index === current ? "carouselCard carouselCard_active" : "carouselCard"}>
+            <div key={index}
+              className={index === current ? "carouselCard carouselCard_active" : "carouselCard"}>
               <img className="cardImage" src={img.image} alt="" />
-              <div className="cardOverlay">
-              </div>
             </div>
           )
         })}
-        <div className="carouselArrowLeft" onClick={slideLeft}>&lsaquo;</div>
-        <div className="carouselArrowRight" onClick={slideRight}>&rsaquo;</div>
+        <FaAngleLeft className="carouselArrowLeft" onClick={slideLeft} />
+        <FaAngleRight className="carouselArrowRight" onClick={slideRight} />
         <div className="carouselPagination">
           {images.map((_, index) => {
             return (

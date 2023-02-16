@@ -77,7 +77,6 @@ html {
 .imagename {
   display: flex;
   margin-right: 30px;
-  
 }
 .aboutContact {
   display: flex;
@@ -104,7 +103,7 @@ html {
 .aboutContact > .aboutUsBtn {
   background-color: var(--almond);
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 27px;
   width: 109px;
   height: 80px;
@@ -112,27 +111,25 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
-.aboutContact > .aboutUsBtn:link, .aboutUsBtn:visited {
+.aboutContact > .aboutUsBtn:link,
+.aboutUsBtn:visited {
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 27px;
   color: black;
   text-decoration: none;
   text-align: center;
-  
 }
 
 .aboutContact > .aboutUsBtn:hover {
   background-color: rgba(231, 215, 193, 0.79);
 }
 
-
 .aboutContact > .contactUsBtn {
   background-color: var(--mint);
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 27px;
   width: 109px;
   height: 80px;
@@ -140,16 +137,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
-.aboutContact > .contactUsBtn:link, .contactUsBtn:visited {
+.aboutContact > .contactUsBtn:link,
+.contactUsBtn:visited {
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 27px;
   color: black;
   text-decoration: none;
   text-align: center;
-  
 }
 
 .aboutContact > .contactUsBtn:hover {
@@ -158,7 +154,7 @@ html {
 .aboutContact > .helpUsBtn {
   background-color: var(--hunter-green);
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 27px;
   width: 109px;
   height: 80px;
@@ -166,16 +162,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
-.aboutContact > .helpUsBtn:link, .helpUsBtn:visited {
+.aboutContact > .helpUsBtn:link,
+.helpUsBtn:visited {
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 27px;
   color: black;
   text-decoration: none;
   text-align: center;
-  
 }
 
 .aboutContact > .helpUsBtn:hover {
@@ -193,10 +188,10 @@ html {
 }
 
 .welcomeText {
-  font-size: large;
   width: 35vw;
   color: var(--almond);
-  margin-left: 15px;
+  margin-left: 1.2em;
+  margin-bottom: 1.5em;
   line-height: 1.5;
 }
 
@@ -211,28 +206,25 @@ html {
   transition: 0.2s;
 }
 
-
-.helpUsButton:link, .helpUsButton:visited {
+.helpUsButton:link,
+.helpUsButton:visited {
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: x-large;
   color: black;
   text-decoration: none;
   text-align: center;
-  
 }
 
 .helpUsButton:hover {
   background-color: rgba(99, 166, 131, 0.79);
 }
 
-
 @media screen and (max-width: 800px) {
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
   #image {
     transform: translateX(-10px);
@@ -247,7 +239,7 @@ html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./img/peakpx_m.jpg");
   height: 400px;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -280,7 +272,7 @@ html {
   justify-content: center;
   align-items: center;
   border: 3px var(--hunter-green) solid;
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 .donateSpan {
@@ -299,7 +291,6 @@ html {
   color: var(--hunter-green);
 }
 
-
 .bestMovie {
   background-color: rgba(0, 0, 0, 0.264);
   position: relative;
@@ -316,7 +307,6 @@ html {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
-
 }
 
 .bestMovie:hover {
@@ -325,37 +315,34 @@ html {
   color: var(--almond);
 }
 
-.whatchSpan
-{
-    opacity: .3;
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    z-index:1;
+.whatchSpan {
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
-.donateSpan
-{
-    opacity: .3;
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    z-index:1;
+.donateSpan {
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
-.whatchSpan
-{
-    opacity: .3;
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    z-index:1;
+.whatchSpan {
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .whatchSpan {
@@ -387,7 +374,7 @@ p {
   text-justify: inter-word;
 }
 
-.socialsLogo{
+.socialsLogo {
   width: 50px;
   margin: 5px;
 }
@@ -398,8 +385,8 @@ p {
 
 * {
   margin: 0;
-padding: 0;
-box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App {
@@ -412,69 +399,61 @@ box-sizing: border-box;
   height: 100vw;
 }
 
-.carousel{
+.carousel {
   display: flex;
   height: 400px;
   width: 100%;
   max-width: 800px;
   margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.carouselWrapper{
+.carouselWrapper {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.carouselCard{
+.carouselCard {
   display: flex;
   flex: 1;
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow:hidden;
+  overflow: hidden;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.15);
-  box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
   opacity: 0;
   pointer-events: none;
-  transform: scale(.8);
+  transform: scale(0.8);
   transition: 0.5s ease-in-out;
 }
 
-.carouselCard_active{
+.carouselCard_active {
   opacity: 1;
   transform: scale(1);
   pointer-events: visible;
 }
 
-.cardImage{
+.cardImage {
   width: 100%;
   object-fit: cover;
 }
 
-.cardOverlay{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  display: flex;
-  padding: 40px 30px;
-  align-items: flex-end;
-}
-
-.cardTitle{
+.cardTitle {
   color: white;
   font-size: 30px;
 }
-.carouselArrowLeft, .carouselArrowRight{
-  font-family:'Times New Roman', Times, serif;
+.carouselArrowLeft,
+.carouselArrowRight {
+  font-family: "Times New Roman", Times, serif;
   color: var(--almond);
   position: absolute;
-  font-size: 40px;
   top: 50%;
   transform: translate(0, -50%);
-  background-color: var(--hunter-green);
+  background-color: var(--mint);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -485,12 +464,20 @@ box-sizing: border-box;
   cursor: pointer;
 }
 
-.carouselArrowLeft{
+.carouselArrowLeft:hover,
+.carouselArrowRight:hover {
+  animation: none;
+  background: var(--hunter-green);
+  color: var(--almond);
+  border: 2px solid var(--almond);
+}
+
+.carouselArrowLeft {
   left: 15px;
 }
 
-.carouselArrowRight{
-  right: 15px
+.carouselArrowRight {
+  right: 15px;
 }
 
 .carouselPagination {
@@ -503,23 +490,23 @@ box-sizing: border-box;
 .paginationDot {
   height: 10px;
   width: 10px;
-  background-color: #f5f5f5;
+  background-color: var(--almond);
   border-radius: 50%;
   display: inline-block;
   margin-left: 10px;
   cursor: pointer;
 }
 
-.paginationDot :hover{
+.paginationDot:hover {
   transform: scale(1.2);
+  background-color: var(--hunter-green);
 }
 
 .paginationDot_active {
   background-color: var(--mint);
 }
 
-
-.contactDiv{
+.contactDiv {
   padding: 60px;
   margin: auto;
   display: flex;
@@ -527,27 +514,27 @@ box-sizing: border-box;
   justify-content: space-around;
 }
 
-input{
+input {
   padding: 3px;
   background-color: rgba(0, 0, 0, 0);
-border-width: 0 0 1.5px;
-border-color: black;
-font-family: "Playfair Display", normal;
+  border-width: 0 0 1.5px;
+  border-color: black;
+  font-family: "Playfair Display", normal;
 }
-input:focus{
+input:focus {
   border-color: none;
   outline: none;
 }
 
-textarea{
-  vertical-align:top;
+textarea {
+  vertical-align: top;
   width: 300px;
   background-color: rgba(255, 255, 255, 0);
   border-width: 1.5 0 1.5px;
   border-color: black;
   font-family: "Playfair Display", normal;
 }
-textarea:focus{
+textarea:focus {
   border-color: none;
   outline: none;
 }
@@ -557,15 +544,25 @@ label {
   display: inline-block;
 }
 
-#horseImg{
+#horseImg {
   width: 500px;
   border-radius: 2%;
 }
 
-
-
-#email{
+#email {
   width: 300px;
+}
+
+#sendButton {
+  margin-left: 435px;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: medium;
+  background-color: var(--mint);
+  border-radius: 10%;
+  border: none;
+  font-family: "Playfair Display", normal;
+  font-weight: 550;
 }
 
 #sendButton, #okButton{
@@ -585,42 +582,40 @@ font-weight: 550;
   cursor: pointer;
 }
 
-input{
+input {
   width: fit-content;
 }
 
-#thxMessage{
+#thxMessage {
   width: 500px;
 }
 
-
-
-.footer{
+.footer {
   bottom: 10px;
   text-align: center;
   background-color: var(--almond);
   padding: 3px;
-  }
+}
 
-.badge{
+.badge {
   width: 110px;
   margin: 5px;
 }
 
-.footer p{
+.footer p {
   text-align: center;
 }
 
-.top-to-btm{
+.top-to-btm {
   position: relative;
 }
-.icon-position{
+.icon-position {
   position: fixed;
   bottom: 40px;
   right: 25px;
   z-index: 20;
 }
-.icon-style{
+.icon-style {
   background-color: var(--mint);
   border: 2px solid --almond;
   border-radius: 50%;
@@ -629,22 +624,23 @@ input{
   color: var(--almond);
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.icon-style:hover{
+.icon-style:hover {
   animation: none;
   background: var(--hunter-green);
   color: var(--almond);
   border: 2px solid var(--almond);
 }
 @keyframes movebtn {
-  0%{
+  0% {
     transform: translateY(0px);
   }
-  50%{
+  50% {
     transform: translateY(-15px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
+
