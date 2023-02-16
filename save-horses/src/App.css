@@ -55,7 +55,7 @@ html {
 }
 
 .header {
-  background-color: white;
+  background-color: var(--liver);
   font-weight: 600;
   font-family: "Playfair Display", serif;
   font-size: 40px;
@@ -65,6 +65,15 @@ html {
   position: sticky;
   z-index: 1;
 }
+
+.header span{
+  color: var(--almond);
+}
+
+.header img{
+  padding: 3px;
+}
+
 .imagename {
   display: flex;
   margin-right: 30px;
@@ -556,13 +565,29 @@ label {
   font-weight: 550;
 }
 
-#sendButton:hover {
+#sendButton, #okButton{
+margin-left: 435px;
+margin-top: 5px;
+padding: 5px;
+font-size: medium;
+background-color: var(--mint);
+border-radius: 10%;
+border: none;
+font-family: "Playfair Display", normal;
+font-weight: 550;
+}
+
+#sendButton:hover, #okButton:hover{
   background-color: rgb(81, 141, 110);
   cursor: pointer;
 }
 
 input {
   width: fit-content;
+}
+
+#thxMessage {
+  width: 500px;
 }
 
 .footer {
