@@ -559,7 +559,7 @@ label {
   width: 300px;
 }
 
-#sendButton{
+#sendButton, #okButton{
 margin-left: 435px;
 margin-top: 5px;
 padding: 5px;
@@ -571,7 +571,7 @@ font-family: "Playfair Display", normal;
 font-weight: 550;
 }
 
-#sendButton:hover{
+#sendButton:hover, #okButton:hover{
   background-color: rgb(81, 141, 110);
   cursor: pointer;
 }
@@ -579,6 +579,12 @@ font-weight: 550;
 input{
   width: fit-content;
 }
+
+#thxMessage{
+  width: 500px;
+}
+
+
 
 .footer{
   bottom: 10px;
