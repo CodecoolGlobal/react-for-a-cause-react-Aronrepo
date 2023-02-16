@@ -19,7 +19,7 @@ export default function TodoList() {
       <div className="aboutContact">
         
           <a className= "aboutUsBtn" href="#aboutUs">About</a>
-          <a className= "contactUsBtn" href="#helpUs">Contact</a>
+          <a className= "contactUsBtn" href="#contactText">Contact</a>
           <a className= "helpUsBtn" href="#helpUs">Help Us</a>
           
       </div>
