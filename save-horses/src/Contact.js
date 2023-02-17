@@ -31,12 +31,23 @@ export default function Contact() {
     }
     function handleSubmit(e) {
       e.preventDefault();
-      if (!firstName || !lastName || !email || !subject || !message) {
-        return;
+
+      let formData = new FormData(e.target);
+
+      let contactDetails = {};
+      for (const entry of formData.entries()) {
+        contactDetails[entry[0]] = entry[1];
+        // contactDetails["lname"] = "Kovacs"
       }
-      setDisplayForm(false);
-      formArr.push(tempObj);
-      console.log(formArr);
+      console.log(contactDetails);
+      // fetch("/api/contact", { method: "POST", body: JSON.stringify(contactDetails)})
+
+      // if (!firstName || !lastName || !email || !subject || !message) {
+      //   return;
+      // }
+      // setDisplayForm(false);
+      // formArr.push(tempObj);
+      // console.log(formArr);
 
       setFirstName("");
       setLastName("");
@@ -53,9 +64,9 @@ export default function Contact() {
         handleSubmit
         }>
         <label htmlFor="fname"> First name: </label>
-        <input type="text" id="fname" name="fname"
-        onChange={(event) =>
-          setFirstName(event.target.value)}></input><br/><br/>
+        <input type="text" id="fname" name="name"
+        // onChange={(event) => setFirstName(event.target.value)}
+        ></input><br/><br/>
 
         <label htmlFor="lname"> Last name: </label>
         <input type="text" id="lname" name="lname"
@@ -76,7 +87,7 @@ export default function Contact() {
         <textarea type="text" id="message" name="message" rows="6"
         onChange={(event) =>
           setMessage(event.target.value)}></textarea>
-      <button type="submit" id="sendButton" >Send</button>
+      <button type="submit" id="sendButton">Send</button>
       </form>
       </div>
   )

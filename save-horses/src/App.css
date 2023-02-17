@@ -100,8 +100,7 @@ html {
   cursor: pointer;
 }
 
-.aboutContact > .aboutUsBtn {
-  background-color: var(--almond);
+.header-link {
   font-weight: 600;
   font-family: "Playfair Display", serif;
   font-size: 27px;
@@ -111,6 +110,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.aboutContact > .aboutUsBtn {
+  background-color: var(--almond);
 }
 .aboutContact > .aboutUsBtn:link,
 .aboutUsBtn:visited {
@@ -128,15 +131,6 @@ html {
 
 .aboutContact > .contactUsBtn {
   background-color: var(--mint);
-  font-weight: 600;
-  font-family: "Playfair Display", serif;
-  font-size: 27px;
-  width: 109px;
-  height: 80px;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .aboutContact > .contactUsBtn:link,
 .contactUsBtn:visited {
@@ -153,15 +147,6 @@ html {
 }
 .aboutContact > .helpUsBtn {
   background-color: var(--hunter-green);
-  font-weight: 600;
-  font-family: "Playfair Display", serif;
-  font-size: 27px;
-  width: 109px;
-  height: 80px;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .aboutContact > .helpUsBtn:link,
 .helpUsBtn:visited {
