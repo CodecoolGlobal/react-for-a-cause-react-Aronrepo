@@ -63,7 +63,7 @@ export default function Contact() {
           setLastName(event.target.value)}></input><br/><br/>
 
         <label htmlFor="email"> Email: </label>
-        <input type="email" id="email" name="email"
+        <input type="email" id="email" name="email" value={email}
         onChange={(event) =>
           setEmail(event.target.value)}></input><br/><br/>
 
