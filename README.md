@@ -1,6 +1,6 @@
 # Saving America's Horses Website
 
-Welcome to the Saving America's Horses website repository! This repository contains the source code for a website dedicated to saving and protecting equines through education, rescue, and preservation. The website showcases various sections such as the header, welcome section, image carousel, about us, help us, contact form, and footer.
+Welcome to the Saving America's Horses website repository! There are many NGOs (non-governmental organizations) specialized for great causes. I had to find one who I'd like to help with a new website because it lacked a site or had one, but an old, not so useful one. Here is the original website's url: https://www.savingamericashorses.org/ . This repository contains the source code for a website dedicated to saving and protecting equines through education, rescue, and preservation. The website showcases various sections such as the header, welcome section, image carousel, about us, help us, contact form, and footer.
 
 ## Table of Contents
 
